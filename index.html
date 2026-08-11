@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영민이의 포트폴리오</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        dark: '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 px-6 shadow-md">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 text-4xl shadow-inner">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <h1 class="text-4xl font-extrabold mb-3 tracking-tight">안녕하세요, 영민이의 포트폴리오입니다</h1>
+            <p class="text-blue-100 text-lg max-w-xl mx-auto">데이터를 바탕으로 인사이트를 도출하고 탐구하는 활동 기록장입니다.</p>
+        </div>
+    </header>
+
+    <!-- Main Content: Reports & Projects Grid -->
+    <main class="max-w-5xl mx-auto px-6 py-12 flex-grow w-full">
+        <h2 class="text-2xl font-bold mb-8 text-slate-900 border-b pb-3 flex items-center gap-2">
+            <i class="fa-solid fa-folder-open text-blue-600"></i> 탐구 및 분석 보고서
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Card 1: 진로 보고서 -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col justify-between group">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-blue-50 text-blue-600 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">진로 탐구</span>
+                        <i class="fa-solid fa-graduation-cap text-blue-500 text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">대학알리미 기반 진로 보고서</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        대학알리미 공공데이터를 활용하여 주요 대학의 학과별 취업률, 진학률 및 교육 환경 데이터를 분석하고 영민이의 진로 방향성을 탐색한 보고서입니다.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded">#대학알리미</span>
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded">#진로적성</span>
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded">#데이터분석</span>
+                    </div>
+                </div>
+                <div class="bg-slate-50 px-6 py-4 border-t border-slate-100 flex justify-end">
+                    <a href="./data1/index.html" class="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors">
+                        보고서 상세보기 <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2: 교통데이터분석 보고서 -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col justify-between group">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-emerald-50 text-emerald-600 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">데이터 사이언스</span>
+                        <i class="fa-solid fa-traffic-light text-emerald-500 text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">도로교통공단 교통데이터 분석</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        도로교통공단 사고 통계 및 교통 흐름 데이터를 기반으로 위험 구간을 분석하고, 효과적인 교통 안전 대책 및 개선안을 도출한 분석 보고서입니다.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded">#도로교통공단</span>
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded">#교통안전</span>
+                        <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded">#통계시각화</span>
+                    </div>
+                </div>
+                <div class="bg-slate-50 px-6 py-4 border-t border-slate-100 flex justify-end">
+                    <a href="./data2/index.html" class="inline-flex items-center gap-2 text-sm font-medium text-emerald-600 hover:text-emerald-700 transition-colors">
+                        보고서 상세보기 <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 text-center py-6 text-slate-500 text-sm mt-12">
+        <p>&copy; 2026 Youngmin's Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
