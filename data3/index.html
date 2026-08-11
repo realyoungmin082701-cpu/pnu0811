@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026년 8월 초반 종이책 판매 현황 분석 보고서</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-indigo-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <span class="bg-indigo-700 text-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">분석 보고서</span>
+                <h1 class="text-2xl sm:text-3xl font-bold mt-2">2026년 8월 초반 종이책 판매 현황 분석</h1>
+                <p class="text-indigo-200 text-sm mt-1">분석 기간: 2026년 8월 6일 ~ 8월 10일</p>
+            </div>
+            <div class="mt-4 md:mt-0 flex gap-3">
+                <div class="bg-indigo-800/80 px-4 py-2 rounded-lg text-center border border-indigo-700">
+                    <span class="block text-xs text-indigo-300">총 누적 매출</span>
+                    <span class="text-lg font-bold">21조... (약 209억 원)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 space-y-8">
+
+        <!-- KPI Summary Cards -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-500">최고 일일 매출 (8/10)</p>
+                    <h3 class="text-2xl font-extrabold text-indigo-900 mt-1">5,188,196,247원</h3>
+                    <span class="text-xs text-emerald-600 font-semibold inline-block mt-2">▲ 최저점 대비 37.5% 급증</span>
+                </div>
+                <div class="p-3 bg-indigo-50 text-indigo-600 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-500">최고 판매 부수 (8/10)</p>
+                    <h3 class="text-2xl font-extrabold text-indigo-900 mt-1">299,874부</h3>
+                    <span class="text-xs text-emerald-600 font-semibold inline-block mt-2">▲ 전일 대비 32.0% 증가</span>
+                </div>
+                <div class="p-3 bg-indigo-50 text-indigo-600 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-500">최고 취급 종수 (SKU, 8/10)</p>
+                    <h3 class="text-2xl font-extrabold text-indigo-900 mt-1">69,492종</h3>
+                    <span class="text-xs text-emerald-600 font-semibold inline-block mt-2">▲ SKU 다양성 24.4% 확대</span>
+                </div>
+                <div class="p-3 bg-indigo-50 text-indigo-600 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Volume & SKU Trend Chart -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">판매 부수 및 취급 종수(SKU) 추이</h3>
+                <div class="relative h-72">
+                    <canvas id="volumeChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Revenue Trend Chart -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">일별 매출액 변동 추이 (원)</h3>
+                <div class="relative h-72">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Table & Key Insights -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Data Table -->
+            <div class="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">일별 종이책 판매 현황 데이터</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-gray-200 text-xs font-semibold text-gray-500 uppercase">
+                                <th class="py-3 px-4">판매일</th>
+                                <th class="py-3 px-4 text-right">판매 부수</th>
+                                <th class="py-3 px-4 text-right">판매 종수(SKU)</th>
+                                <th class="py-3 px-4 text-right">금액 (원)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-sm">
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium text-gray-900">26년 08월 06일</td>
+                                <td class="py-3 px-4 text-right">247,502</td>
+                                <td class="py-3 px-4 text-right">64,010</td>
+                                <td class="py-3 px-4 text-right font-semibold">4,284,953,280</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium text-gray-900">26년 08월 07일</td>
+                                <td class="py-3 px-4 text-right">233,491</td>
+                                <td class="py-3 px-4 text-right">63,780</td>
+                                <td class="py-3 px-4 text-right font-semibold">4,059,429,797</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-amber-50/50">
+                                <td class="py-3 px-4 font-medium text-amber-900">26년 08월 08일 <span class="text-xs bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded ml-1">저점</span></td>
+                                <td class="py-3 px-4 text-right">223,320</td>
+                                <td class="py-3 px-4 text-right">55,426</td>
+                                <td class="py-3 px-4 text-right font-semibold">3,773,981,481</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium text-gray-900">26년 08월 09일</td>
+                                <td class="py-3 px-4 text-right">227,179</td>
+                                <td class="py-3 px-4 text-right">55,851</td>
+                                <td class="py-3 px-4 text-right font-semibold">3,816,901,500</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-indigo-50/50">
+                                <td class="py-3 px-4 font-medium text-indigo-900">26년 08월 10일 <span class="text-xs bg-indigo-100 text-indigo-800 px-1.5 py-0.5 rounded ml-1">정점</span></td>
+                                <td class="py-3 px-4 text-right font-bold text-indigo-900">299,874</td>
+                                <td class="py-3 px-4 text-right font-bold text-indigo-900">69,492</td>
+                                <td class="py-3 px-4 text-right font-extrabold text-indigo-900">5,188,196,247</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Key Insights & Conclusions -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">핵심 비즈니스 인사이트</h3>
+                    <ul class="space-y-4 text-sm text-gray-600">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 h-5 w-5 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xs mr-3 mt-0.5">1</span>
+                            <div>
+                                <strong class="text-gray-900">V자형 리바운드 패턴</strong>
+                                <p class="text-xs mt-0.5">8월 8일 저점 기록 후 이틀 만에 전고점을 상회하는 폭발적인 브레이크아웃 성장세 기록.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 h-5 w-5 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xs mr-3 mt-0.5">2</span>
+                            <div>
+                                <strong class="text-gray-900">SKU 다양성의 수요 견인</strong>
+                                <p class="text-xs mt-0.5">종수(SKU) 24.4% 확충이 판매 부수 32.0% 증가로 이어져 인벤토리 폭이 핵심 동력임을 입증.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 h-5 w-5 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xs mr-3 mt-0.5">3</span>
+                            <div>
+                                <strong class="text-gray-900">임계점 돌파 (50억 원 선)</strong>
+                                <p class="text-xs mt-0.5">주말 집중 수요 또는 마케팅 외부 요인으로 추정되며, 향후 유사 피크 대비 전략 수립 필요.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-100 text-xs text-gray-400 text-center">
+                    종이책 판매 데이터 분석 대시보드 © 2026
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Chart Scripts -->
+    <script>
+        const labels = ['8월 6일', '8월 7일', '8월 8일', '8월 9일', '8월 10일'];
+
+        // Volume & SKU Chart
+        const ctxVolume = document.getElementById('volumeChart').getContext('2d');
+        new Chart(ctxVolume, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: '판매 부수',
+                        data: [247502, 233491, 223320, 227179, 299874],
+                        borderColor: '#4f46e5',
+                        backgroundColor: '#4f46e5',
+                        yAxisID: 'y',
+                        tension: 0.2,
+                        borderWidth: 3
+                    },
+                    {
+                        label: '취급 종수 (SKU)',
+                        data: [64010, 63780, 55426, 55851, 69492],
+                        borderColor: '#06b6d4',
+                        backgroundColor: '#06b6d4',
+                        yAxisID: 'y1',
+                        tension: 0.2,
+                        borderWidth: 2,
+                        borderDash: [4, 4]
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                scales: {
+                    y: {
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        title: { display: true, text: '판매 부수 (부)' }
+                    },
+                    y1: {
+                        type: 'linear',
+                        display: true,
+                        position: 'right',
+                        grid: { drawOnChartArea: false },
+                        title: { display: true, text: '취급 종수 (종)' }
+                    }
+                }
+            }
+        });
+
+        // Revenue Chart
+        const ctxRevenue = document.getElementById('revenueChart').getContext('2d');
+        new Chart(ctxRevenue, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: '일일 매출액 (원)',
+                    data: [4284953280, 4059429797, 3773981481, 3816901500, 5188196247],
+                    backgroundColor: [
+                        '#818cf8',
+                        '#818cf8',
+                        '#f59e0b',
+                        '#818cf8',
+                        '#4f46e5'
+                    ],
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        ticks: {
+                            callback: function(value) {
+                                return (value / 100000000).toFixed(1) + '억원';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
