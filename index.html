@@ -22,7 +22,14 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header / Hero Section -->
-    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 px-6 shadow-md">
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 px-6 shadow-md relative">
+        <!-- 홈 버튼 -->
+        <div class="absolute top-6 left-6">
+            <a href="../index.html" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/25 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-sm">
+                <i class="fa-solid fa-house"></i> 홈으로
+            </a>
+        </div>
+
         <div class="max-w-4xl mx-auto text-center">
             <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 text-4xl shadow-inner">
                 <i class="fa-solid fa-user-graduate"></i>
